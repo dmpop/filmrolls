@@ -6,7 +6,7 @@
 </head>
 <title>Delete Roll</title>
 <div id="content">
-<h1>Delete item number {{no}}?</h1>
+<h1>Delete roll {{no}}?</h1>
 <form action="/delete/{{no}}" method="GET">
 <input type="submit" id="btn" class="warning" name="delete" value="Delete">
 </form>

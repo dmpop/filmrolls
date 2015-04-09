@@ -6,7 +6,7 @@
 </head>
 <title>Film Rolls</title>
 <div id="content">
-<h1>Edit Roll #{{no}}</h1>
+<h1>Edit Roll {{no}}</h1>
 <form action="/edit/{{no}}" method="GET">
 <p>Order no.: <input type="text" name="order_no" value="{{old[1]}}" size="50" maxlength="254"></p>
 <p>Date: <input type="text" name="dt" value="{{old[2]}}" size="50" maxlength="100"></p>
