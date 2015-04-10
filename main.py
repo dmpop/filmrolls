@@ -28,7 +28,7 @@ def filmrolls():
         return output
     else:
         conn = sqlite3.connect('filmrolls.sqlite')
-        conn.execute("CREATE TABLE rolls (id INTEGER PRIMARY KEY  NOT NULL, order_no INTEGER DEFAULT (null), dt DATETIME DEFAULT (CURRENT_DATE), camera VARCHAR,film VARCHAR)")
+        conn.execute("CREATE TABLE rolls (id INTEGER PRIMARY KEY  NOT NULL, order_no VARCHAR DEFAULT (null), dt DATETIME DEFAULT (CURRENT_DATE), camera VARCHAR,film VARCHAR)")
         conn.commit()
         return redirect('/filmrolls')
 
